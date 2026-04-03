@@ -1,0 +1,48 @@
+{
+  "name": "@x1ngyu/tw-style",
+  "private": false,
+  "author": "x1ng Yu",
+  "description": "A lightweight utility library built on the **Tailwind CSS v4** compiler, used to generate corresponding CSS for classes on demand, with support for incremental builds.",
+  "homepage": "https://github.com/rxy001/tw-style",
+  "keywords": [
+    "tailwindcss",
+    "tailwind",
+    "vite",
+    "style"
+  ],
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rxy001/tw-style.git"
+  },
+  "version": "0.0.2",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      }
+    }
+  },
+  "scripts": {
+    "build": "vite build && tsc"
+  },
+  "devDependencies": {
+    "tailwindcss": "^4.2.2",
+    "typescript": "~5.9.3",
+    "vite": "^8.0.1"
+  },
+  "peerDependencies": {
+    "tailwindcss": "^4.2.2"
+  }
+}
