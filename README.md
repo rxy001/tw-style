@@ -14,13 +14,13 @@ A lightweight utility library built on the **Tailwind CSS v4** compiler, used to
 ## Installation
 
 ```bash
-pnpm add tw-style tailwindcss
+pnpm add @x1ngyu/tw-style tailwindcss
 ```
 
 ## Quick Start
 
 ```ts
-import { compiler } from "tw-style";
+import { compiler } from "@x1ngyu/tw-style";
 
 const build = await compiler({
   useLayer: false,
