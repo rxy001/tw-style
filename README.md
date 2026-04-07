@@ -60,17 +60,6 @@ declare function compiler(
   - Whether to include Tailwind Preflight (base style reset).
   - Default: `false`
 
-### `build(classes)`
-
-The function returned by `compiler()`, used to generate CSS on demand.
-
-```ts
-declare function build(classes: string[]): Promise<string | undefined>;
-```
-
-- `classes: string[]`
-  - List of Tailwind classes to build.
-
 ## License
 
 MIT
